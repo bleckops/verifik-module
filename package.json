@@ -1,5 +1,5 @@
 {
-  "name": "VerifikModule",
+  "name": "verifikmodule",
   "version": "0.0.1",
   "description": "A lib that use biometrics to register & authenticate users",
   "scripts": {

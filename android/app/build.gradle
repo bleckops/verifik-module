@@ -153,7 +153,7 @@ dependencies {
     implementation("com.facebook.react:react-android")
 
     implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.0.0")
-    implementation files('libs/facetec-sdk-9.6.26.aar')
+    implementation files('libs/facetec-sdk-9.6.34.aar')
     implementation files('libs/VerifikKit-debug.aar')
 
     debugImplementation("com.facebook.flipper:flipper:${FLIPPER_VERSION}")
