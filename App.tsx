@@ -34,7 +34,7 @@ class App extends Component {
 
   onOCRPress = () => {
     console.log(VerifikModule);
-    VerifikModule.ocr((error, success) => {
+    VerifikModule.ocr("001",(error: String, success: String) => {
       console.log(`Error ${error} \n Success ${success}`);
     });
   };
@@ -56,10 +56,10 @@ class App extends Component {
   };
 
   componentDidMount() {   
-    let token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBSZWdpc3RyYXRpb25JZCI6IjY0NTNlZDIxMjQyZmM4ZjEzNzc2OGMwNyIsImV4cGlyZXNBdCI6IjIwMjMtMDUtMDQgMTg6MTU6NTEiLCJhY2Nlc3NUeXBlIjoiYXBwX3JlZ2lzdHJhdGlvbl9jcmVhdGVkIiwiZW1haWwiOiJpYW1mZWxpcGVvQGdtYWlsLmNvbSIsInBob25lIjoiMzEwMjY5MjEzOCIsInByb2plY3QiOiI2M2M2Y2IyYWU3YzkyZGFkNTBiNjI4ODIiLCJpYXQiOjE2ODMyMjIzNTF9.dUenQm1IUi1c4pWY_rLX75BfbpdFWgEE-fz2SXnZKHk";
+    let token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGllbnRJZCI6IjYxM2E4NWNlODIyY2NhY2E4ZTQwMWFmMCIsImRvY3VtZW50VHlwZSI6IkNDIiwiZG9jdW1lbnROdW1iZXIiOiIxMjM0NTY3ODkiLCJ2IjoxLCJyb2xlIjoiY2xpZW50IiwiSldUUGhyYXNlIjoiTTExMyIsImV4cGlyZXNBdCI6IjIwMjQtMDYtMjQgMjA6NTA6NTkiLCJpYXQiOjE2ODc4MzQyNTl9.KXWmK5zEw3m4ZfbUaxaK9Fl1sftu_Y4JH9okn1S_9PE";
     VerifikModule.initVerifik(
       token, 
-      (error, success) => {
+      (error: String, success: String) => {
         console.log(`Error ${error} \n Success ${success}`);
       });
   }

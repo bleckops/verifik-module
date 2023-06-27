@@ -155,10 +155,10 @@ public class VerifikModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    public void ocr(Callback callback) {
+    public void ocr(String externalDatabaseID, Callback callback) {
         this.callback = callback;
         if(initVerifik) {
-            verifik.photoIDScan();
+            verifik.photoIDScan(externalDatabaseID);
         }
     }
 

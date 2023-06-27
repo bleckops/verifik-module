@@ -44,11 +44,11 @@ RCT_EXPORT_METHOD(matchID:(NSString *)externalDatabaseRef :(RCTResponseSenderBlo
   [v matchIDScanWithExternalDataBaseRefID:externalDatabaseRef];
 }
 
-RCT_EXPORT_METHOD(ocr:(RCTResponseSenderBlock) callback)
+RCT_EXPORT_METHOD(ocr:(NSString *)externalDatabaseRef :(RCTResponseSenderBlock) callback)
 {
   RCTLogInfo(@"Pretending to ocr on Verifik");
   callbck = callback;
-  [v photoIDScan];
+  [v photoIDScanWithExternalDataBaseRefID:externalDatabaseRef];
 }
 
 RCT_EXPORT_METHOD(appRegisterKYC:(NSString *)project email:(NSString *)email phone:(NSString *)phone :(RCTResponseSenderBlock) callback)
